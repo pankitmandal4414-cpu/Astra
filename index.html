@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050a08">
+  <title>SECRET AGENT OS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <div class="logo">S<span>A</span> // SECRET AGENT OS</div>
+    <div class="status">
+      <span class="pulse"></span> SYSTEM ONLINE
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="hero">
+      <p class="eyebrow">CLASSIFIED INTELLIGENCE NETWORK</p>
+      <h1>WELCOME, <span>AGENT.</span></h1>
+      <p class="subtitle">Your command center is ready.</p>
+      <div class="clock" id="clock">00:00:00</div>
+    </section>
+
+    <section class="stats">
+      <article class="panel">
+        <p>REGISTERED DEVICES</p>
+        <h2>00</h2>
+        <small>AUTHORIZED DEVICES</small>
+      </article>
+      <article class="panel">
+        <p>SECURITY STATUS</p>
+        <h2 class="green">SECURE</h2>
+        <small>LOCAL DEMO STATUS</small>
+      </article>
+      <article class="panel">
+        <p>ACTIVE MISSIONS</p>
+        <h2>03</h2>
+        <small>SIMULATED MISSIONS</small>
+      </article>
+    </section>
+
+    <section class="modules">
+      <h2>// COMMAND MODULES</h2>
+      <div class="module-grid">
+        <button class="module" data-module="Network Discovery Lab">
+          <span>01</span>
+          NETWORK DISCOVERY
+        </button>
+        <button class="module" data-module="Security Scanner">
+          <span>02</span>
+          SECURITY SCANNER
+        </button>
+        <button class="module" data-module="Password Security Lab">
+          <span>03</span>
+          PASSWORD LAB
+        </button>
+        <button class="module" data-module="Device Dashboard">
+          <span>04</span>
+          DEVICE DASHBOARD
+        </button>
+        <button class="module" data-module="Mission Control">
+          <span>05</span>
+          MISSION CONTROL
+        </button>
+        <button class="module" data-module="Command Terminal">
+          <span>06</span>
+          COMMAND TERMINAL
+        </button>
+      </div>
+    </section>
+
+    <section class="terminal">
+      <div class="terminal-header">
+        <span>AGENT TERMINAL</span>
+        <span>LOCAL SIMULATION</span>
+      </div>
+      <div id="output">
+        <p>SECRET AGENT OS [Version 1.0]</p>
+        <p>Type <b>help</b> to see available commands.</p>
+      </div>
+      <form id="command-form">
+        <label for="command">AGENT@SAOS:~$</label>
+        <input id="command" autocomplete="off"
+          placeholder="Enter command..." />
+      </form>
+    </section>
+  </main>
+
+  <footer>SECRET AGENT OS // AUTHORIZED SECURITY LAB</footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
